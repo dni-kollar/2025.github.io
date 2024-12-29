@@ -18,6 +18,7 @@ h1, h2, h3 {
     padding: 50px 20px;
     background: #ff5722;
     color: white;
+    position: relative;
 }
 
 .hero h1 {
@@ -25,6 +26,19 @@ h1, h2, h3 {
     margin: 0;
     color: white;
     display: block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Javított kontraszt */
+}
+
+/* Discover text */
+.hero p {
+    font-size: 1.2em;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8); /* Átlátszó háttér a szöveg körül */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 /* Our Favorite New Year's Dishes section */
