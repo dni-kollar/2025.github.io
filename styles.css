@@ -41,18 +41,6 @@ h1, h2, h3 {
     margin-top: 20px;
 }
 
-/* Our Favorite New Year's Dishes section */
-#main-content section:first-of-type {
-    margin-left: 60px; /* Slightly indented */
-}
-
-/* Favorite Dishes list */
-ul {
-    list-style: disc;
-    margin: 20px 40px;
-    color: #333;
-}
-
 /* Recipe Grid */
 .recipe-grid {
     display: grid;
@@ -60,7 +48,7 @@ ul {
     grid-auto-rows: auto; /* Automatikus sor magasság */
     gap: 20px; /* Térköz az elemek között */
     padding: 20px;
-    justify-items: center; /* Középre igazított elemek */
+    justify-content: center; /* Kártyák középre igazítása */
 }
 
 .recipe-card {
@@ -70,17 +58,18 @@ ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.2s;
-    width: 100%; /* Az oszlop szélességét kitöltő kártya */
-    max-width: 250px; /* Kártyák maximális szélessége */
-}
-
-.recipe-card:hover {
-    transform: scale(1.05); /* Kicsit nagyobb hover hatás */
+    width: 100%; /* Oszlop szélességéhez igazodik */
+    max-width: 200px; /* Fix maximális szélesség */
 }
 
 .recipe-card img {
     width: 100%;
     height: auto;
+    display: block;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05); /* Hover hatás */
 }
 
 .recipe-card h3 {
