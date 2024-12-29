@@ -129,7 +129,8 @@ ul {
 footer {
     text-align: center;
     padding: 20px;
-    background: #ff5722;
-    color: white;
+    background: #ff5722; /* Narancssárga háttér */
+    color: #000000; /* Fekete szöveg a jobb kontraszthoz */
     font-size: 1em;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2); /* Finom árnyék */
 }
