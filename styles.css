@@ -26,14 +26,13 @@ h1, h2, h3 {
     margin: 0;
     color: white;
     display: block;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Javított kontraszt */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Discover text */
 .hero p {
     font-size: 1.2em;
     color: #333;
-    background-color: rgba(255, 255, 255, 0.8); /* Átlátszó háttér a szöveg körül */
+    background-color: rgba(255, 255, 255, 0.8);
     display: inline-block;
     padding: 10px 20px;
     border-radius: 8px;
@@ -44,11 +43,11 @@ h1, h2, h3 {
 /* Recipe Grid */
 .recipe-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 oszlop per sor */
-    grid-auto-rows: auto; /* Automatikus sor magasság */
+    grid-template-columns: repeat(5, 1fr); /* 5 oszlop minden sorban */
     gap: 20px; /* Térköz az elemek között */
     padding: 20px;
-    justify-content: center; /* Kártyák középre igazítása */
+    max-width: 1200px; /* A grid szélességének korlátozása */
+    margin: 0 auto; /* Középre igazítás */
 }
 
 .recipe-card {
@@ -58,8 +57,7 @@ h1, h2, h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.2s;
-    width: 100%; /* Oszlop szélességéhez igazodik */
-    max-width: 200px; /* Fix maximális szélesség */
+    width: 100%; /* Az oszlop szélességéhez igazodik */
 }
 
 .recipe-card img {
@@ -69,7 +67,7 @@ h1, h2, h3 {
 }
 
 .recipe-card:hover {
-    transform: scale(1.05); /* Hover hatás */
+    transform: scale(1.05);
 }
 
 .recipe-card h3 {
@@ -83,46 +81,12 @@ h1, h2, h3 {
     color: #666;
 }
 
-/* Skip to content link */
-.skip-link {
-    display: block;
-    text-align: left;
-    margin: 20px 40px;
-    color: #666;
-    font-size: 1em;
-    text-decoration: none;
-}
-
-.skip-link:hover {
-    text-decoration: underline;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-/* Additional Recipes section */
-#tovabbi-receptek {
-    text-align: left;
-    margin-left: 40px; /* Slightly less indented */
-    color: #333;
-}
-
-#tovabbi-receptek h2 {
-    margin-bottom: 10px;
-    color: #ff5722;
-}
-
-#tovabbi-receptek p {
-    margin: 0;
-    font-size: 1em;
-    color: #333;
-}
-
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #ff5722; /* Narancssárga háttér */
-    color: #000000; /* Fekete szöveg a jobb kontraszthoz */
+    background: #ff5722;
+    color: #000000;
     font-size: 1em;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2); /* Finom árnyék */
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
 }
