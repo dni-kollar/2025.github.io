@@ -57,10 +57,10 @@ ul {
 .recipe-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 oszlop per sor */
-    grid-template-rows: repeat(2, auto); /* 2 sor automatikus magassággal */
+    grid-auto-rows: auto; /* Automatikus sor magasság */
     gap: 20px; /* Térköz az elemek között */
-    justify-items: center; /* Középre igazított elemek */
     padding: 20px;
+    justify-items: center; /* Középre igazított elemek */
 }
 
 .recipe-card {
@@ -70,6 +70,8 @@ ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.2s;
+    width: 100%; /* Az oszlop szélességét kitöltő kártya */
+    max-width: 250px; /* Kártyák maximális szélessége */
 }
 
 .recipe-card:hover {
