@@ -134,3 +134,17 @@ footer {
     font-size: 1em;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2); /* Finom árnyék */
 }
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .recipe-grid {
+        grid-template-columns: 1fr; /* Egy oszlop mobilon */
+        gap: 10px; /* Kisebb térköz */
+        padding: 10px; /* Kisebb padding */
+    }
+
+    .recipe-card {
+        text-align: center;
+        width: 100%; /* Teljes szélesség kihasználása */
+    }
+}
